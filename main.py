@@ -29,7 +29,7 @@ opcion = input('''Ingrese una opción para Jugar!
         
     > ''')
 # 1. validar opcion
-opcion = 
+opcion = validate(['0','1'], opcion)  #llama a la funcion validate de validador.py con 0 y 1 como opciones y la opción ingresada como elección
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
