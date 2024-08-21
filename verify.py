@@ -2,17 +2,19 @@ import preguntas as p
 
 
 def verificar(alternativas, eleccion):
-    #devuelve el índice de elección dada
-    eleccion = ['a', 'b', 'c','d'].index(eleccion)
+    """Permite verificar si la elección ingresada por el usuario es la correcta
+    
+    Args:
+        alternativas(arr): alternativas aleatorizadas
+        elección (str): alternativa escogida por el usuario
+    Returns: 
+        correcto (int):"""
+    
+    eleccion_index = ['a', 'b', 'c','d'].index(eleccion)
 
-    # generar lógica para determinar respuestas correctas
-    ##########################################################################################
-    pass
+    #verificar si la eleccion es correcta
+    correcto = alternativas[eleccion_index][1] == 1
     
-    
-    
-    
-    ##########################################################################################
     return correcto
 
 

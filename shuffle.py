@@ -1,16 +1,10 @@
 import preguntas as p
-import random
+from random import shuffle
 
 def shuffle_alt(pregunta):
-    #mezclar alternativas
-    #######################################################################
-    pass
-    
-    
-    
-    #######################################################################
-    
-    return pregunta['alternativas']
+    alternativas = pregunta['alternativas']
+    shuffle(alternativas)
+    return alternativas
 
 if __name__ == '__main__':
     # si se ejecuta el  programa varias veces las alternativas debieran aparecer en distinto orden
